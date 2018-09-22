@@ -16,9 +16,8 @@ defmodule Mybench do
     :world
   end
 
-
   def start_benchmark do
-    list = Enum.to_list(1..10_000)
+    list = Enum.to_list(1..11_000)
     map_fun = fn i -> [i, i * i] end
 
     Benchee.run(
